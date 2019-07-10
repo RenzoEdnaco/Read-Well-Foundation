@@ -1,0 +1,92 @@
+html *{
+     margin: 0;
+     padding: 0;
+     font: 16px Rockwell, sans-serif;
+     background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+    margin: 30px;
+}
+
+.header{
+    margin-bottom: 50px;
+    
+}
+
+.container{
+    width: 1590px !important;
+
+
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.navigation li{
+    display: inline;
+    margin-left: 50px;
+}
+
+.navigation a{
+    color:black !important;
+    font-size: 20px;
+}
+
+.two-buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.join-us{
+    font-size: 20px;
+    display: inline; 
+
+}
+
+.donate{
+    font-size: 20px;
+    margin-left: 30px;
+    display: inline;
+
+}
+
+.banner img{
+    margin: auto;
+}
+
+
+.banner{
+    background: url("../images/banner-bg.png") no-repeat center;
+    height: 898px;
+    overflow: hidden;
+    min-height: 100%;
+
+}
+
+.banner li{
+    text-align: center;
+    font: 200px blackHand_TRIAL, sans-serif;
+    color: #ffc23e;
+    list-style: none;
+
+}
+
+
+.banner-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.headline{
+
+}
