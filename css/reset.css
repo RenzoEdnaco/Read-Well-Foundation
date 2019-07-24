@@ -137,34 +137,4 @@ table {
   margin: 0;
   padding: 0;
 }
-
-/*=====Buttons=====*/
-/*=====Buttons=====*/
-/*=====Colors=====*/
-/*=====Buttons=====*/
-/*======================= IMPORT =======================*/
-html {
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-}
-
-/*======================= GENERAL =======================*/
-#parentContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#container {
-  width: 1410px;
-}
-
-.ctaBtn {
-  background-image: url("../images/button-yellow-fill-01.svg");
-  background-repeat: no-repeat;
-  height: 50px;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=reset.css.map */
