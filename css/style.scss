@@ -1,0 +1,26 @@
+@import "./mixins";
+@import "./reset.scss";
+@import "./variables.scss";
+
+/*======================= IMPORT =======================*/
+
+html{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*======================= GENERAL =======================*/
+
+#parentContainer{
+    @include flexCenter;
+
+}
+
+#container{
+    width: 1410px;
+}
+
+.ctaBtn{
+    @include background ("../images/button-yellow-fill-01.svg",no-repeat,50px);
+
+}

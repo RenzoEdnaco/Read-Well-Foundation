@@ -1,0 +1,13 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin background($imgpath,$repeat,$height){
+    background: {
+        image: url($imgpath);
+        repeat: $repeat;
+    }
+    height: $height; 
+
+}
