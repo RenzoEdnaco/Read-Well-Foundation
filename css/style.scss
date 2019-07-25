@@ -4,23 +4,139 @@
 
 /*======================= IMPORT =======================*/
 
-html{
+body, html{
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    background-size: 100% 100%;
+}
+
+#parentContainer{
+    @include flexCenter;
+}
+
+#container{
+    width: 1590px;
+    padding: 0 30px;
 }
 
 /*======================= GENERAL =======================*/
 
-#parentContainer{
-    @include flexCenter;
+/*======================= HEADER =======================*/
+
+header{
+    margin: 50px 0;
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        height: 90px;
+    }
+}
+
+nav{
+    display: flex;
+    align-items: center;
+
+    li{
+        display: inline;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+.headerBtn{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 57px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.primaryctaBtn{
+    @include ctaBtn ("../images/button-yellow-fill-01.svg",no-repeat,164px, 58px);
 
 }
 
-#container{
-    width: 1410px;
-}
-
-.ctaBtn{
-    @include background ("../images/button-yellow-fill-01.svg",no-repeat,50px);
+.secondaryctaBtn{
+    @include ctaBtn ("../images/button-black-border.svg", no-repeat, 157px, 58px);
 
 }
+
+/*======================= HEADER =======================*/
+
+/*======================= ARTICLE =======================*/
+
+.banner{
+    text-align: center;
+    padding: 20px 0;
+    .bannerBackground{
+        @include background ("../images/banner-bg.png", no-repeat, 100%, 100%);
+        position: absolute;
+        left: 0;
+        padding: 70px 0;
+    }
+    .donate{
+        width: 40%;
+    }
+    p{
+        color: #fff;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 20px;
+    }    
+}
+
+.bannerBtn{
+    display: flex;
+    text-align: center;
+    line-height: 57px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.thirdctaBtn{
+    @include ctaBtn ("../images/button-yellow-border-01.svg", no-repeat, 155px, 58px);
+    color: $primaryYellow;
+}
+
+.reports{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.help{
+    @include background ("../images/banner-square.svg", no-repeat, 490px, 300px);
+    margin-right: 30px;
+    padding: 40px;
+    font-size: 20px;
+    h1{
+        font-size: 30px;
+        font-weight: 600;
+        text-align: initial;
+    }
+    p{
+        font-size: 20px;
+        text-align: initial;
+        color: $secondaryYellow;
+        margin-top: 10px;
+    }
+    .secondaryctaBtn{
+        font-weight: 600;
+        line-height: 55px;
+        margin: 20px 0;
+    }
+}
+
+.percentage{
+    @include background ("../images/banner-rectangle.svg", no-repeat, 1010px, 300px);
+}
+
+
+
+/*======================= ARTICLE =======================*/

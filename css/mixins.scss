@@ -3,11 +3,24 @@
     justify-content: center;
 }
 
-@mixin background($imgpath,$repeat,$height){
+@mixin background($imgpath,$repeat,$width,$height){
     background: {
         image: url($imgpath);
-        repeat: $repeat;
+        repeat: $repeat;    
     }
+    width: $width;
     height: $height; 
+
+}
+
+
+@mixin ctaBtn($imgpath,$repeat,$width,$height){
+    background: {
+        image: url($imgpath);
+        repeat: $repeat;    
+    }
+    width: $width;
+    height: $height; 
+    margin: 20px;
 
 }
