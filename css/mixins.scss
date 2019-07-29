@@ -24,3 +24,10 @@
     margin: 20px;
 
 }
+
+@mixin span{
+    text-align: center;
+    font-size: 16px;
+    color: $secondaryYellow;
+    font-weight: 600;
+}

@@ -229,7 +229,6 @@ nav li {
 /*======================= HEADER =======================*/
 /*======================= ARTICLE =======================*/
 .banner {
-  text-align: center;
   padding: 20px 0;
 }
 
@@ -254,6 +253,10 @@ nav li {
   margin-top: 20px;
 }
 
+.bannerContent {
+  text-align: center;
+}
+
 .bannerBtn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,7 +268,7 @@ nav li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .thirdctaBtn {
@@ -284,10 +287,10 @@ nav li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
-.help {
+.reports .help {
   background-image: url("../images/banner-square.svg");
   background-repeat: no-repeat;
   width: 490px;
@@ -297,30 +300,103 @@ nav li {
   font-size: 20px;
 }
 
-.help h1 {
+.reports .help h1 {
   font-size: 30px;
   font-weight: 600;
   text-align: initial;
 }
 
-.help p {
+.reports .help p {
   font-size: 20px;
   text-align: initial;
   color: #8d6a1e;
   margin-top: 10px;
 }
 
-.help .secondaryctaBtn {
+.reports .help .secondaryctaBtn {
   font-weight: 600;
   line-height: 55px;
   margin: 20px 0;
+  text-align: center;
 }
 
-.percentage {
+.reports .percentage {
   background-image: url("../images/banner-rectangle.svg");
   background-repeat: no-repeat;
   width: 1010px;
   height: 300px;
+  padding: 50px 40px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reports .percentage img {
+  text-align: inherit !important;
+}
+
+.reports .percentage .circleGraph {
+  background-image: url("../images/circle-graph.svg");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
+  padding-top: 20px;
+}
+
+.reports .percentage h1 {
+  font-size: 50px;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 800;
+}
+
+.reports .percentage span {
+  text-align: center;
+  font-size: 16px;
+  color: #8d6a1e;
+  font-weight: 600;
+}
+
+.reports .percentage .overallStats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reports .percentage ul {
+  padding: 20px;
+}
+
+.reports .percentage li {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.reports .percentage .percentageBtn {
+  background-image: url("../images/button-black-fill.svg");
+  background-repeat: no-repeat;
+  width: 141px;
+  height: 50px;
+  margin: 20px;
 }
 
 /*======================= ARTICLE =======================*/
