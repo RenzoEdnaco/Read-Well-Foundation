@@ -166,6 +166,7 @@ body, html {
 /*======================= GENERAL =======================*/
 /*======================= HEADER =======================*/
 header {
+  display: block;
   margin: 50px 0;
 }
 
@@ -229,17 +230,11 @@ nav li {
 /*======================= HEADER =======================*/
 /*======================= ARTICLE =======================*/
 .banner {
-  padding: 20px 0;
-}
-
-.banner .bannerBackground {
   background-image: url("../images/banner-bg.png");
   background-repeat: no-repeat;
-  width: 100%;
+  width: 1920px;
   height: 100%;
-  position: absolute;
-  left: 0;
-  padding: 70px 0;
+  margin-left: -13%;
 }
 
 .banner .donate {
@@ -253,11 +248,15 @@ nav li {
   margin-top: 20px;
 }
 
-.bannerContent {
+.banner .bannerContent {
   text-align: center;
 }
 
-.bannerBtn {
+.banner .bannerContent img {
+  padding-top: 70px;
+}
+
+.banner .bannerBtn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,10 +267,9 @@ nav li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10px;
 }
 
-.thirdctaBtn {
+.banner .thirdctaBtn {
   background-image: url("../images/button-yellow-border-01.svg");
   background-repeat: no-repeat;
   width: 155px;
@@ -280,6 +278,7 @@ nav li {
   color: #ffc23e;
 }
 
+/*======================= REPORTS =======================*/
 .reports {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,7 +320,7 @@ nav li {
 }
 
 .reports .percentage {
-  background-image: url("../images/banner-rectangle.svg");
+  background-image: url("../images/percentageBg.png");
   background-repeat: no-repeat;
   width: 1010px;
   height: 300px;
@@ -333,6 +332,9 @@ nav li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reports .percentage img {
@@ -360,8 +362,8 @@ nav li {
 .reports .percentage h1 {
   font-size: 50px;
   text-align: center;
-  line-height: 20px;
-  font-weight: 800;
+  line-height: 35px;
+  font-family: 'Berkshire Swash', cursive;
 }
 
 .reports .percentage span {
@@ -369,6 +371,7 @@ nav li {
   font-size: 16px;
   color: #8d6a1e;
   font-weight: 600;
+  font-family: 'Roboto', sans-serif;
 }
 
 .reports .percentage .overallStats {
@@ -397,7 +400,66 @@ nav li {
   width: 141px;
   height: 50px;
   margin: 20px;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
 }
 
+.reports .percentage table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reports .percentage table tr > td {
+  text-align: center;
+  padding: 8px 10px;
+}
+
+.reports .percentage table tr > td h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.reports .percentage table tr > td p {
+  text-align: center;
+  font-size: 20px;
+  color: #8d6a1e;
+  font-weight: 600;
+  margin: 0;
+}
+
+/*======================= REPORTS =======================*/
+/*======================= UPCOMING EVENTS =======================*/
+.upcomingEventsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 200px;
+}
+
+.upcomingEventsContainer h1 {
+  font-size: 70px;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.upcomingEventsContainer .navArrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/*======================= UPCOMING EVENTS =======================*/
 /*======================= ARTICLE =======================*/
 /*# sourceMappingURL=style.css.map */

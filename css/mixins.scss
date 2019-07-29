@@ -25,9 +25,9 @@
 
 }
 
-@mixin span{
+@mixin span($fontSize){
     text-align: center;
-    font-size: 16px;
+    font-size: $fontSize;
     color: $secondaryYellow;
     font-weight: 600;
 }

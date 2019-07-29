@@ -24,6 +24,7 @@ body, html{
 /*======================= HEADER =======================*/
 
 header{
+    display: block;
     margin: 50px 0;
     .row{
         display: flex;
@@ -68,44 +69,48 @@ nav{
 
 /*======================= ARTICLE =======================*/
 
+
 .banner{
-    padding: 20px 0;
-    .bannerBackground{
-        @include background ("../images/banner-bg.png", no-repeat, 100%, 100%);
-        position: absolute;
-        left: 0;
-        padding: 70px 0;
-    }
+    @include background ("../images/banner-bg.png", no-repeat, 1920px, 100%);
+    margin-left: -13%;
+
     .donate{
         width: 40%;
     }
+
     p{
         color: #fff;
         font-size: 20px;
         line-height: 30px;
         margin-top: 20px;
     }    
-}
 
-.bannerContent{
-    text-align: center;
-}
+    .bannerContent{
+        text-align: center;
 
-.bannerBtn{
-    display: flex;
-    text-align: center;
-    line-height: 57px;
-    font-size: 20px;
-    font-weight: 600;
-    justify-content: center;
-    margin-top: 10px;
+        img{
+            padding-top: 70px;
+        }
+
+    }
     
+    .bannerBtn{
+        display: flex;
+        text-align: center;
+        line-height: 57px;
+        font-size: 20px;
+        font-weight: 600;
+        justify-content: center;
+    }
+    
+    .thirdctaBtn{
+        @include ctaBtn ("../images/button-yellow-border-01.svg", no-repeat, 155px, 58px);
+        color: $primaryYellow;
+    }
+
 }
 
-.thirdctaBtn{
-    @include ctaBtn ("../images/button-yellow-border-01.svg", no-repeat, 155px, 58px);
-    color: $primaryYellow;
-}
+/*======================= REPORTS =======================*/
 
 .reports{
     display: flex;
@@ -137,11 +142,12 @@ nav{
     }
     
     .percentage{
-        @include background ("../images/banner-rectangle.svg", no-repeat, 1010px, 300px);
+        @include background ("../images/percentageBg.png", no-repeat, 1010px, 300px);
         padding: 50px 40px;
         font-size: 20px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     
         img{
             text-align: inherit !important;
@@ -159,12 +165,14 @@ nav{
         h1{
             font-size: 50px;
             text-align: center;
-            line-height: 20px;
-            font-weight: 800;
+            line-height: 35px;
+            font-family: 'Berkshire Swash', cursive;
         }
     
         span{
-            @include span();
+            @include span(16px);
+            font-family: 'Roboto', sans-serif;
+
         }
     
         .overallStats{
@@ -186,16 +194,67 @@ nav{
 
         .percentageBtn{
             @include ctaBtn ("../images/button-black-fill.svg", no-repeat, 141px, 50px);
-                
+            color: #fff;
+            padding: 15px;
+            text-align: center; 
+            font-weight: 600;
             
+        }
+
+        table{
+            display: flex;
+            align-items: center;
+        }
+
+        table tr>td{
+            text-align: center;
+            padding: 8px 10px;
+
+            h2{
+                font-size: 30px;
+                font-weight: 700;
+                font-family: 'Berkshire Swash', cursive;
+            }
+
+            p{
+                @include span(20px);
+                margin: 0;
+            }
         }
 
     }
     
 }
 
+/*======================= REPORTS =======================*/
 
+/*======================= UPCOMING EVENTS =======================*/
 
+.upcomingEventsContainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
 
+    h1{
+        font-size: 70px;
+        font-family: 'Berkshire Swash', cursive;
+    }
+
+    .upcomingEvents{
+
+    }
+
+    .navArrows{
+        display: flex;
+        justify-content: flex-start;
+        .leftArrow{}
+        .rightArrow{}
+    }
+    
+
+}
+
+/*======================= UPCOMING EVENTS =======================*/
 
 /*======================= ARTICLE =======================*/
+
