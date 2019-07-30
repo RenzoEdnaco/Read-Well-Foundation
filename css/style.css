@@ -150,25 +150,16 @@ html {
   background-size: 100% 100%;
 }
 
-#parentContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 #container {
   width: 1590px;
   padding: 0 30px;
+  margin: auto;
 }
 
 /*======================= GENERAL =======================*/
 /*======================= HEADER =======================*/
 header {
-  display: block;
-  margin: 50px 0;
+  padding: 50px !important;
 }
 
 header .row {
@@ -235,7 +226,6 @@ nav li {
   background-repeat: no-repeat;
   width: 1920px;
   height: 100%;
-  margin-left: -13%;
 }
 
 .banner .donate {

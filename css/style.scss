@@ -11,13 +11,11 @@ html {
   background-size: 100% 100%;
 }
 
-#parentContainer {
-  @include flexCenter;
-}
-
 #container {
+
   width: 1590px;
   padding: 0 30px;
+  margin: auto;
 }
 
 /*======================= GENERAL =======================*/
@@ -25,8 +23,8 @@ html {
 /*======================= HEADER =======================*/
 
 header {
-  display: block;
-  margin: 50px 0;
+  padding: 50px !important;
+
   .row {
     display: flex;
     justify-content: space-between;
@@ -75,7 +73,6 @@ nav {
 
 .banner {
   @include background("../images/banner-bg.png", no-repeat, 1920px, 100%);
-  margin-left: -13%;
 
   .donate {
     width: 40%;
