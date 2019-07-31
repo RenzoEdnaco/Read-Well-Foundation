@@ -196,8 +196,7 @@ nav {
     }
 
     .percentageBtn {
-      @include ctaBtn(
-        "../images/button-black-fill.svg",
+      @include ctaBtn("../images/button-black-fill.svg",
         no-repeat,
         141px,
         50px
@@ -276,8 +275,8 @@ nav {
 }
 
 .futureEvents {
-    display: flex;
 
+    display: flex;
     .tanggalBinggotFoundation{
 
         h1{
@@ -360,7 +359,86 @@ nav {
 
 }
 
-
 /*======================= UPCOMING EVENTS =======================*/
+
+/*======================= BENEFIT OF HELPING =======================*/
+
+.benefitOfHelping{
+  padding-top: 300px;
+  @include background("../images/benefitsMainBg.svg", no-repeat, 100%,2000px);
+  background-position: 0 200px;
+
+  h1{
+    font-size: 70px;
+    font-family: "Berkshire Swash", cursive;
+    text-align: center;
+  }
+
+  .benefits{  
+    background-position: center;
+    @include background("../images/girlsReading.png", no-repeat, 100%, 898px);
+  }
+
+  .benefitList{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+
+    li{
+      display: inline;
+      text-align: center;
+    }
+
+    li:nth-child(1){
+      margin-top: -200px;
+    }
+
+    li:nth-child(3){
+      margin-top: -100px;
+    }    
+
+    h2{
+      font-size: 20px;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 700;
+      line-height: 25px;
+    }
+
+    p{
+      font-size: 18px;
+      line-height: 28px;
+      color: $bodyColor;
+      padding-top: 10px;
+    } 
+
+    img{
+      width: 100%;
+      height: 113px;
+      padding-bottom: 20px;
+    }
+
+  }
+
+}
+
+/*======================= BENEFIT OF HELPING =======================*/
+
+/*======================= EVENTS AND NEWS =======================*/
+
+.eventsAndNews{
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    font-size: 70px;
+    font-family: "Berkshire Swash", cursive;
+    text-align: center;
+  }
+
+
+
+}
+/*======================= EVENTS AND NEWS =======================*/
 
 /*======================= ARTICLE =======================*/

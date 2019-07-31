@@ -22,7 +22,7 @@
     width: $width;
     height: $height; 
     margin: 20px;
-
+    cursor: pointer;
 }
 
 @mixin span($fontSize){
