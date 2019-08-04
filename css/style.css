@@ -313,6 +313,20 @@ nav li {
   text-align: center;
 }
 
+.reports .percentageBtn {
+  background-image: url("../images/button-black-fill.svg");
+  background-repeat: no-repeat;
+  width: 141px;
+  height: 50px;
+  margin: 20px;
+  cursor: pointer;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 25px;
+}
+
 .reports .percentage {
   background-image: url("../images/percentageBg.png");
   background-repeat: no-repeat;
@@ -383,20 +397,6 @@ nav li {
   font-size: 40px;
   font-weight: 800;
   display: inline-block;
-}
-
-.reports .percentage .percentageBtn {
-  background-image: url("../images/button-black-fill.svg");
-  background-repeat: no-repeat;
-  width: 141px;
-  height: 50px;
-  margin: 20px;
-  cursor: pointer;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
-  font-weight: 600;
-  line-height: 25px;
 }
 
 .reports .percentage table {
@@ -533,7 +533,7 @@ nav li {
 .futureEvents .foundationStats .infoButton .primaryctaBtn {
   margin: 0 0 0 30px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   line-height: 60px;
 }
@@ -640,14 +640,131 @@ nav li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url("../images/littleGirl.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-position: 100% 100%;
 }
 
 .eventsAndNews h1 {
   font-size: 70px;
   font-family: "Berkshire Swash", cursive;
   text-align: center;
+  padding-bottom: 20px;
+}
+
+.eventsAndNews h2 {
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.eventsAndNews p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #959595;
+}
+
+.eventsAndNews .primaryctaBtn {
+  background-image: url("../images/button-yellow-fill-01.svg");
+  background-repeat: no-repeat;
+  width: 164px;
+  height: 58px;
+  margin: 20px;
+  cursor: pointer;
+  margin: 30px 0;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.eventsAndNews .articleContent {
+  padding-top: 100px;
+}
+
+.eventsAndNews .articleLeft {
+  width: 40%;
+}
+
+.eventsAndNews .navArrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 25px;
+  padding-top: 30px;
+}
+
+.eventsAndNews .navArrows p {
+  font-size: 20px;
+}
+
+.eventsAndNews .navArrows .material-icons:first-child {
+  padding: 0 20px 0 0;
+}
+
+.eventsAndNews .navArrows .material-icons:first-child:hover {
+  color: #ffc23f;
+  cursor: pointer;
+}
+
+.eventsAndNews .navArrows .material-icons {
+  padding: 0 20px 0 20px;
+}
+
+.eventsAndNews .navArrows .material-icons:hover {
+  color: #ffc23f;
+  cursor: pointer;
 }
 
 /*======================= EVENTS AND NEWS =======================*/
+/*======================= YOUR SUPPORT IS POWERFUL =======================*/
+.supportIsPowerful {
+  padding-top: 200px;
+}
+
+.supportIsPowerful h1 {
+  font-size: 70px;
+  font-family: "Berkshire Swash", cursive;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.supportIsPowerful p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #959595;
+  text-align: center;
+}
+
+.supportIsPowerful .primaryctaBtn {
+  background-image: url("../images/donateNow.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 82px;
+  margin: 20px;
+  cursor: pointer;
+  cursor: pointer;
+  text-align: center;
+  line-height: 90px;
+  font-weight: 700;
+  font-size: 30px;
+  background-position: center;
+  margin: 50px 0;
+}
+
+.supportIsPowerful .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*======================= YOUR SUPPORT IS POWERFUL =======================*/
 /*======================= ARTICLE =======================*/
 /*# sourceMappingURL=style.css.map */
