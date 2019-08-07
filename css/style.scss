@@ -1,6 +1,7 @@
 @import "./mixins";
 @import "./reset.scss";
 @import "./variables.scss";
+@import "./responsive.scss";
 
 /*======================= IMPORT =======================*/
 
@@ -28,11 +29,15 @@ header {
 
   .row {
     display: flex;
-    justify-content: space-between;
+
   }
   .logo {
     height: 90px;
   }
+}
+
+.mobileNav{
+  display: none;
 }
 
 nav {
@@ -43,7 +48,14 @@ nav {
     display: inline;
     font-size: 20px;
     padding: 10px;
+    cursor: pointer;
+
+    &:hover{
+      color: $primaryYellow;
+      border-bottom: 1px solid $primaryYellow;
+    }
   }
+
 }
 
 .headerBtn {
@@ -290,6 +302,10 @@ nav {
             font-size: 18px;
             line-height: 28px;
             color: $bodyColor;
+        }
+
+        img{
+          padding-top: 30px;
         }
     }
 
@@ -597,11 +613,19 @@ footer{
       font-weight: 700;
       padding-bottom: 10px;
       color: #fff;
+      &:hover{
+        border-bottom: none;
+      }
     }
 
     li{
       line-height: 30px;
       color: $bodyColor;
+      &:hover{
+        color: $primaryYellow;
+        border-bottom: 1px solid $primaryYellow;
+        cursor: pointer;
+      }
     }
   }
 
@@ -612,11 +636,20 @@ footer{
       font-weight: 700;
       padding-bottom: 10px;
       color: #fff;
+        &:hover{
+          border-bottom: none;
+
+        }
     }
 
     li{
       line-height: 30px;
       color: $bodyColor;
+      &:hover{
+        color: $primaryYellow;
+        border-bottom: 1px solid $primaryYellow;
+        cursor: pointer;
+      }
     }
   }
 
@@ -627,11 +660,19 @@ footer{
       font-weight: 700;
       padding-bottom: 10px;
       color: #fff;
+      &:hover{
+        border-bottom: none;
+      }
     }
 
     li{
       line-height: 30px;
       color: $bodyColor;
+      &:hover{
+        color: $primaryYellow;
+        border-bottom: 1px solid $primaryYellow;
+        cursor: pointer;
+      }
     }
   }
 
@@ -647,6 +688,7 @@ footer{
     li{
       line-height: 30px;
       color: $bodyColor;
+      
     }
   }
 

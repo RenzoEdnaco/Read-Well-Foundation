@@ -142,6 +142,69 @@ table {
 /*=====Buttons=====*/
 /*=====Colors=====*/
 /*=====Buttons=====*/
+/*======================= MOBILE =======================*/
+@media only screen and (max-width: 320px) {
+  #container {
+    width: 320px !important;
+    padding: 20px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  header .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .row .logo {
+    width: 150px !important;
+  }
+  header .row .desktopNav {
+    /* display: none !important; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header .row .desktopNav li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  header .row .headerBtn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+  }
+  header .row .mobileNav {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: none;
+  }
+}
+
 /*======================= IMPORT =======================*/
 body,
 html {
@@ -167,13 +230,14 @@ header .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 header .logo {
   height: 90px;
+}
+
+.mobileNav {
+  display: none;
 }
 
 nav {
@@ -189,6 +253,12 @@ nav li {
   display: inline;
   font-size: 20px;
   padding: 10px;
+  cursor: pointer;
+}
+
+nav li:hover {
+  color: #ffc23e;
+  border-bottom: 1px solid #ffc23e;
 }
 
 .headerBtn {
@@ -490,6 +560,10 @@ nav li {
   font-size: 18px;
   line-height: 28px;
   color: #959595;
+}
+
+.futureEvents .tanggalBinggotFoundation img {
+  padding-top: 30px;
 }
 
 .futureEvents .foundationStats ul {
@@ -827,9 +901,19 @@ footer .listOflist .getInvolve li:nth-child(1) {
   color: #fff;
 }
 
+footer .listOflist .getInvolve li:nth-child(1):hover {
+  border-bottom: none;
+}
+
 footer .listOflist .getInvolve li {
   line-height: 30px;
   color: #959595;
+}
+
+footer .listOflist .getInvolve li:hover {
+  color: #ffc23e;
+  border-bottom: 1px solid #ffc23e;
+  cursor: pointer;
 }
 
 footer .listOflist .stayUpdated li:nth-child(1) {
@@ -840,9 +924,19 @@ footer .listOflist .stayUpdated li:nth-child(1) {
   color: #fff;
 }
 
+footer .listOflist .stayUpdated li:nth-child(1):hover {
+  border-bottom: none;
+}
+
 footer .listOflist .stayUpdated li {
   line-height: 30px;
   color: #959595;
+}
+
+footer .listOflist .stayUpdated li:hover {
+  color: #ffc23e;
+  border-bottom: 1px solid #ffc23e;
+  cursor: pointer;
 }
 
 footer .listOflist .followUs li:nth-child(1) {
@@ -853,9 +947,19 @@ footer .listOflist .followUs li:nth-child(1) {
   color: #fff;
 }
 
+footer .listOflist .followUs li:nth-child(1):hover {
+  border-bottom: none;
+}
+
 footer .listOflist .followUs li {
   line-height: 30px;
   color: #959595;
+}
+
+footer .listOflist .followUs li:hover {
+  color: #ffc23e;
+  border-bottom: 1px solid #ffc23e;
+  cursor: pointer;
 }
 
 footer .listOflist .contactUs li:nth-child(1) {
