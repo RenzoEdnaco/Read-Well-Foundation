@@ -1,5 +1,5 @@
 
-/*======================= MOBILE =======================*/
+/*======================= HEADER =======================*/
 @media only screen and (max-width: 320px) {
     #container{
         width: 320px !important;
@@ -12,14 +12,14 @@
     header{
     .row{
         display: flex;
-        flex-direction: column;
-    
+        
+
     .logo{
         width: 150px !important;
     }
 
     .desktopNav{
-        /* display: none !important; */
+        display: none !important;
         display: flex;
         justify-content: center;
         padding-top: 20px;
@@ -35,15 +35,72 @@
     .headerBtn{
         flex-direction: column;
         padding-top: 20px;
+        display: none;
     }
 
     .mobileNav{
         cursor: pointer;
         display: flex;
-        display: none;
     }
     }
 
 }
+/*======================= HEADER =======================*/
+
+/*======================= BANNER =======================*/
+
+.banner{
+    width: 320px !important;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+
+    .bannerContent{
+        display: flex;
+        flex-direction: column;
+
+        .donate{
+            width: 60%;
+            margin: auto;
+        }
+
+        p{
+            padding: 0 20px;
+            font-size: 18px;
+        }
+
+    }
+
+    .bannerBtn{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+
+        .thirdctaBtn{
+            margin: 10px;
+        }
+
+        .primaryctaBtn{
+            margin: 10px;
+        }
+    }
+
+    .reports{
+        display: flex;
+        flex-direction: column;
+
+        .help{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+/*======================= BANNER =======================*/
+
+
+
 
 }

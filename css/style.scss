@@ -29,7 +29,7 @@ header {
 
   .row {
     display: flex;
-
+    justify-content: space-between;
   }
   .logo {
     height: 90px;
@@ -106,7 +106,7 @@ nav {
     }
   }
 
-  .bannerBtn {
+  .bannerBtn {  
     display: flex;
     text-align: center;
     line-height: 60px;
