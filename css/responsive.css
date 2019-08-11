@@ -112,6 +112,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0 20px;
   }
   .banner .reports .help {
     display: -webkit-box;
@@ -121,7 +122,136 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background-image: url("../images/banner-square-responsive.svg");
+    height: 450px;
+    width: 280px;
+  }
+  .banner .reports .help h1, .banner .reports .help p {
+    text-align: center;
+  }
+  .banner .reports .help .secondaryctaBtn {
+    margin: 30px auto;
+  }
+  .banner .reports .percentage {
+    background-image: url("../images/percentageBg-responsive.png");
+    height: 800px;
+    width: 280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 75px;
+    margin-top: 30px;
+  }
+  .banner .reports .percentage .circleGraph {
+    margin: 25px auto;
   }
   /*======================= BANNER =======================*/
+  /*======================= UPCOMING EVENTS =======================*/
+  .upcomingEventsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 100px !important;
+  }
+  .upcomingEventsContainer .upcomingEvents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .upcomingEventsContainer .upcomingEvents h1 {
+    font-size: 50px !important;
+    padding-bottom: 50px !important;
+  }
+  .upcomingEventsContainer .upcomingEvents .navArrows {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .upcomingEventsContainer .futureEvents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .upcomingEventsContainer .futureEvents h1, .upcomingEventsContainer .futureEvents p {
+    text-align: center;
+  }
+  .upcomingEventsContainer .tanggalBinggotFoundation {
+    width: 280px !important;
+  }
+  .upcomingEventsContainer .tanggalBinggotFoundation img {
+    width: 100%;
+  }
+  .upcomingEventsContainer .foundationStats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 50px;
+  }
+  .upcomingEventsContainer .foundationStats ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .upcomingEventsContainer .foundationStats ul li {
+    padding: 20px;
+  }
+  .upcomingEventsContainer .foundationStats img {
+    width: 100%;
+  }
+  .upcomingEventsContainer .foundationStats .infoButton {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .upcomingEventsContainer .foundationStats .infoButton table {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .upcomingEventsContainer .foundationStats .infoButton table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .upcomingEventsContainer .foundationStats .infoButton table tr td {
+    padding: 10px;
+  }
+  .upcomingEventsContainer .foundationStats .infoButton .primaryctaBtn {
+    margin: 0 auto !important;
+    margin-top: 30px !important;
+  }
+  /*======================= UPCOMING EVENTS =======================*/
 }
 /*# sourceMappingURL=responsive.css.map */
