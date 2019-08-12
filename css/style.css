@@ -397,6 +397,22 @@ table {
     margin-top: 30px !important;
   }
   /*======================= UPCOMING EVENTS =======================*/
+  /*======================= UPCOMING EVENTS =======================*/
+  .benefitOfHelping h1 {
+    font-size: 50px !important;
+  }
+  .benefitOfHelping .benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .benefitOfHelping .benefitList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /*======================= UPCOMING EVENTS =======================*/
 }
 
 /*======================= IMPORT =======================*/
