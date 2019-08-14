@@ -398,19 +398,30 @@ table {
   }
   /*======================= UPCOMING EVENTS =======================*/
   /*======================= UPCOMING EVENTS =======================*/
+  .benefitOfHelping {
+    background-image: url("../images/benefitsMainBg-responsive.svg ") !important;
+    background-position: 0px 100px !important;
+    padding-top: 200px !important;
+  }
   .benefitOfHelping h1 {
     font-size: 50px !important;
   }
   .benefitOfHelping .benefits {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin-top: 50px;
   }
   .benefitOfHelping .benefitList {
+    padding-top: 200px !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .benefitOfHelping li {
+    padding-top: 50px;
+    width: auto !important;
+  }
+  .benefitOfHelping li:nth-child(3) {
+    margin-top: 0px !important;
   }
   /*======================= UPCOMING EVENTS =======================*/
 }
@@ -874,11 +885,13 @@ nav li:hover {
 }
 
 .benefitOfHelping .benefits {
-  background-position: center;
-  background-image: url("../images/girlsReading.png");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 898px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefitOfHelping .benefits img {
+  margin: auto;
 }
 
 .benefitOfHelping .benefitList {
@@ -893,6 +906,7 @@ nav li:hover {
 .benefitOfHelping .benefitList li {
   display: inline;
   text-align: center;
+  width: 350px;
 }
 
 .benefitOfHelping .benefitList li:nth-child(1) {

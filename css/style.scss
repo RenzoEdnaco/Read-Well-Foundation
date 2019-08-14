@@ -394,8 +394,11 @@ nav {
   }
 
   .benefits{  
-    background-position: center;
-    @include background("../images/girlsReading.png", no-repeat, 100%, 898px);
+    display: flex;
+    img{
+      margin: auto;
+    }
+    
   }
 
   .benefitList{
@@ -406,6 +409,7 @@ nav {
     li{
       display: inline;
       text-align: center;
+      width: 350px;
     }
 
     li:nth-child(1){
