@@ -450,10 +450,7 @@ nav {
 
 .eventsAndNews{
   padding-top: 200px;
-  display: flex;
-  justify-content: center;
-  @include background("../images/littleGirl.png", no-repeat, 100%, 100%);
-  background-position: 100% 100%;
+
 
   h1 {
     font-size: 70px;
@@ -469,7 +466,7 @@ nav {
     line-height: 25px;
   }
   
-  p{
+  .articleP{
     font-size: 18px;
     line-height: 28px;
     color: $bodyColor;
@@ -493,10 +490,20 @@ nav {
 
   .articleContent{
     padding-top: 100px;
+    display: flex;
   }
 
   .articleLeft{
-    width: 40%;
+    width: 50%;
+    padding-right: 50px;
+
+    h2{
+      padding-bottom: 20px;
+    }
+  }
+
+  .articleRight{
+    width: 50%;
   }
 
   .navArrows {
@@ -504,8 +511,10 @@ nav {
     line-height: 25px;
     padding-top: 30px;
 
+
     p {
       font-size: 20px;
+      color: $primaryBlack;
     }
 
     .material-icons:first-child {
@@ -691,7 +700,7 @@ footer{
       color: #fff;
     }
 
-    li{
+    li{ 
       line-height: 30px;
       color: $bodyColor;
       
